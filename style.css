@@ -68,6 +68,22 @@ nav a{
     eishob korsilam kaj hoccilo na, tai canva te giye bg lagaisi */
 }
 
+/* main styles */
+main{
+    max-width: 1050px;
+    margin: 0 auto;
+}
+.logos{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #C0CCDA;
+    border-bottom: 1px solid #C0CCDA;
+    border-image: linear-gradient(90deg, #c0ccda25 10%, #c0ccda8e 60%, #c0ccda25)1;
+    padding: 30px;
+    gap: 30px;
+}
+
 /* responsive styles */
 
 /* small devices */
@@ -90,6 +106,11 @@ nav a{
     }
     .main-camera img{
         width: 100%;
+    }
+    .logos{
+        flex-direction: column;
+        width: 40%;
+        margin-left: 60px;
     }
 }
 @media screen and (min-width: 576px) and (max-width:990px) {
