@@ -60,10 +60,10 @@ nav a{
     border: none;
 }
 .main-camera img{
-    width: 100;
+    /* width: 100%; */
     margin-top: 30px;
-    background-image: url(images/Circle\ design.svg);
-    background-repeat: no-repeat;
+    /* background-image: url(images/Circle\ design.svg);
+    background-repeat: no-repeat; */
 }
 
 /* main styles */
@@ -99,7 +99,7 @@ main{
     background-color: #FFFFFF;
     padding: 15px;
     border-radius: 10px;
-    box-shadow: 10px 10px 100px #C0CCDA;
+    box-shadow: 10px 10px 30px #C0CCDA;
 }
 .product-div .product-title{
     color: #18191F;
@@ -125,13 +125,37 @@ main{
     left: 950px;
 }
 
+/* features styles */
+.features{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    margin-top: 100px;
+}
+.features-content{
+    margin-bottom: 50px;
+}
+.features-title{
+    font-size: 38px;
+    font-weight: 700;
+    color: #0A0826;
+}
+.features-content .text-light-gray{
+    color: #6C6C6C;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.features-content .btn-primary{
+    border-radius: 0;
+}
+
 
 /* responsive styles */
 
 /* small devices */
 @media screen and (max-width: 576px) {
     header{
-        padding: 20px 20px;
+        padding: 20px;
     }
     nav, .collection{
         flex-direction: column;
@@ -139,14 +163,14 @@ main{
     nav ul li{
         margin-right: 10px;
     }
-    .banner{
+    .banner, .features{
         flex-direction: column-reverse;
     }
-    .banner-content{
+    .banner-content, .features-content{
         margin: 10px;
         text-align: center;
     }
-    .main-camera img{
+    .main-camera img, .features-img img{
         width: 100%;
     }
     .logos{
@@ -163,9 +187,15 @@ main{
 }
 @media screen and (min-width: 576px) and (max-width:990px) {
     header{
-        padding: 20px 60px;
+        padding: 20px 100px;
+    }
+    .logos{
+        padding-left: 100px;
     }
     nav ul{
         margin-left: 150px;
+    }
+    .features{
+        padding-left: 100px;
     }
 }
